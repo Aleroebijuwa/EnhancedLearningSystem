@@ -1,0 +1,25 @@
+.panel-babcock {
+    border-color: #467ba7;
+}
+
+.panel-babcock .panel-heading {
+    background-color: #467ba7;
+    color: #fff;
+}
+
+.panel-babcock .panel-heading {
+    background-color: #467ba7;
+    color:#fff;
+    border: 1px solid #467ba7;
+    border-color: #467ba7;
+}
+.panel-babcock-head .panel-heading {
+    background-color: #467ba7;
+}
+.span-header{
+    position: absolute;
+    top: 30px;
+    left: 260px;
+    color: #fff;
+    font-size: 19px;
+}

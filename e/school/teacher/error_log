@@ -1,0 +1,26 @@
+[30-May-2021 13:57:15 Europe/Helsinki] PHP Notice:  Undefined index: usernames in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/viewsquestion.php on line 7
+[30-May-2021 13:57:15 Europe/Helsinki] PHP Notice:  Undefined index: passwords in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/viewsquestion.php on line 8
+[30-May-2021 13:57:19 Europe/Helsinki] PHP Notice:  Undefined index: usernames in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/viewstudentquestion2.php on line 7
+[30-May-2021 13:57:19 Europe/Helsinki] PHP Notice:  Undefined index: passwords in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/viewstudentquestion2.php on line 8
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Warning:  include(../connection.php): failed to open stream: No such file or directory in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 11
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 11
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Notice:  Undefined variable: con in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 19
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 19
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 21
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Notice:  Undefined variable: con in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 43
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 43
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 46
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Notice:  Undefined variable: con in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 339
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 339
+[26-Sep-2021 17:51:16 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 364
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Warning:  include(../connection.php): failed to open stream: No such file or directory in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 11
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 11
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Notice:  Undefined variable: con in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 19
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 19
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 21
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Notice:  Undefined variable: con in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 43
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 43
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 46
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Notice:  Undefined variable: con in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 339
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 339
+[26-Sep-2021 17:51:28 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/rcqqiiok/public_html/Mission_Institute/school/teacher/addquiz.php on line 364

@@ -1,0 +1,436 @@
+<?php
+
+//dbase connection=======================================
+include('connection.php');
+//========================================================
+
+				$query = "SELECT * FROM bible_studies  ORDER BY bibleId";
+	 	 $result = mysqli_query($con, $query);
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<!-- Mirrored from luma.humatheme.com/boxed-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Aug 2020 13:44:38 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Spring of Life Outreach Ministry: Mission Institute</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link href="assets/font/css8f03.css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap" rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Fix Footer CSS -->
+    <link type="text/css" href="assets/vendor/fix-footer.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets/css/material-icons.css" rel="stylesheet">
+
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet">
+
+
+    <!-- Preloader -->
+    <link type="text/css" href="assets/css/preloader.css" rel="stylesheet">
+
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="layout-boxed ">
+
+    <div class="preloader">
+        <div class="sk-double-bounce">
+            <div class="sk-child sk-double-bounce1"></div>
+            <div class="sk-child sk-double-bounce2"></div>
+        </div>
+    </div>
+
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
+        <div class="mdk-drawer-layout__content page-content">
+
+            <!-- Header -->
+
+
+
+
+
+
+            <div class="navbar navbar-expand navbar-dark navbar-dark-dodger-blue navbar-shadow" id="default-navbar" data-primary>
+
+                <!-- Navbar toggler -->
+                <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button" data-toggle="sidebar">
+                    <span class="material-icons">short_text</span>
+                </button>
+
+                <!-- Navbar Brand -->
+                <a href="boxed-index.html" class="navbar-brand mr-16pt d-lg-none">
+                    <!-- <img class="navbar-brand-icon" src="assets/images/logo/white-100@2x.png" width="30" alt="Luma"> -->
+
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                    </span>
+
+                    <span class="d-none d-lg-block"></span>
+                </a>
+
+                <ul class="nav navbar-nav d-none d-sm-flex flex justify-content-start ml-8pt">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">You are Welcome to Spring of Life Outreach Ministry: Bible Study Series</a>
+                    </li>
+                  
+                </ul>
+
+
+                <form class="search-form navbar-search d-none d-lg-flex mr-16pt" action="http://luma.humatheme.com/boxed-index.html" style="max-width: 230px">
+                    <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                    <input type="text" class="form-control" placeholder="Search ...">
+                </form>
+
+
+
+
+
+
+
+                <ul class="nav navbar-nav ml-auto mr-0">
+                    <li class="nav-item">
+                        <a href="login.php" class="nav-link" data-toggle="tooltip" data-title="Login" data-placement="bottom" data-boundary="window"><i class="material-icons">lock_open</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.php" class="btn btn-outline-white">login</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <!-- // END Header -->
+
+
+
+
+<?php
+
+$sql ="SELECT count(ItemId) AS total FROM biblelessons ";
+$resultm= mysqli_query($con, $sql);
+$valuea= mysqli_fetch_assoc($resultm);
+$num_rowsg= $valuea['total'];
+//echo $num_rowsg;
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+            
+            <div class="page-section border-bottom-2">
+                <div class="container-fluid page__container">
+                    <div class="page-separator">
+                        <div class="page-separator__text">Bible Study series Course</div>
+                    </div>
+
+
+ 
+                    <div class="row card-group-row">
+					<?php while ($row=mysqli_fetch_array($result)){
+	
+
+
+						//$rowb=mysqli_fetch_array($resultb);
+	//$insurance_id = $row['insurance_id'];
+	
+	$Courseimage = $row['Courseimage'] ;
+
+	$img_file = "admin/photos/".$Courseimage;
+
+	$dimg = "<img src='$img_file' border='0'width='220px' height='180px'>";
+	
+	$dimg2 = "<img src='$img_file' border='0' width='40px' height='40px'>";
+	
+	$bibleId = $row['bibleId']; 
+	$author = $row['author']; 
+	$info = $row['info']; 
+	$biblestudiesname = $row['biblestudiesname'];
+	//$report_type_id = $rowb['report_type_id'];
+	//$teacherid =  $rowb['teacherid1'];
+	
+	//$report_file = $rowb['report_file'];
+						?>
+                        <div class="col-md-6 col-lg-4 col-xl-3 card-group-row__col">
+                       
+
+                            <div class="card card-sm card--elevated p-relative o-hidden overlay overlay--primary-dodger-blue js-overlay card-group-row__card" data-toggle="popover" data-trigger="click">
+
+
+                                    <?php echo $dimg; ?>
+                                    <span class="overlay__content">
+                                        <span class="overlay__action d-flex flex-column text-center">
+                                            <i class="material-icons icon-32pt">play_circle_outline</i>
+                                            <span class="card-title text-white">Preview</span>
+                                        </span>
+                                    </span>
+                                </a>
+
+                                <div class="card-body flex">
+                                    <div class="d-flex">
+                                        <div class="flex">
+                                            <a class="card-title" href="boxed-student-course.html"><?php echo $biblestudiesname; ?></a>
+                                            <small class="text-50 font-weight-bold mb-4pt"><?php echo $author; ?></small>
+                                        </div>
+                                        <a href="boxed-student-course.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" class="ml-4pt material-icons text-20 card-course__icon-favorite">favorite_border</a>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="rating flex">
+                                            <span class="rating__item"><span class="material-icons">star</span></span>
+                                            <span class="rating__item"><span class="material-icons">star</span></span>
+                                            <span class="rating__item"><span class="material-icons">star</span></span>
+                                            <span class="rating__item"><span class="material-icons">star</span></span>
+                                            <span class="rating__item"><span class="material-icons">star_border</span></span>
+                                        </div>
+                                        <!-- <small class="text-50">6 hours</small> -->
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row justify-content-between">
+                                        
+                                        <div class="col-auto d-flex align-items-center">
+                                            <span class="material-icons icon-16pt text-black-50 mr-4pt">play_circle_outline</span>
+                                            <p class="flex text-black-50 lh-1 mb-0"><small><?php echo $num_rowsg ?> lessons lessons</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popoverContainer d-none">
+                                <div class="media">
+                                    <div class="media-left mr-12pt">
+                                        <?php echo $dimg2; ?>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="card-title mb-0"><?php echo $biblestudiesname; ?></div>
+                                        <p class="lh-1 mb-0">
+                                            <span class="text-black-50 small">by</span>
+                                            <span class="text-black-50 small font-weight-bold"><?php echo $author; ?></span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="my-16pt text-black-70"><?php echo $info; ?></p>
+
+                                
+
+
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center mb-4pt">
+                                            <span class="material-icons icon-16pt text-black-50 mr-4pt">access_time</span>
+                                            <p class="flex text-black-50 lh-1 mb-0"><small>6 hours</small></p>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-4pt">
+                                            <span class="material-icons icon-16pt text-black-50 mr-4pt">play_circle_outline</span>
+                                            <p class="flex text-black-50 lh-1 mb-0"><small>12 lessons</small></p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <span class="material-icons icon-16pt text-black-50 mr-4pt">assessment</span>
+                                            <p class="flex text-black-50 lh-1 mb-0"><small>Beginner</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="col text-right">
+                                        <a href="signup.php?bibleId=<?php echo $bibleId;?>" class="btn btn-primary">Enroll Now</a>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+						
+<?php } ?>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="js-fix-footer2 bg-white border-top-2">
+                <div class="container-fluid page__container page-section d-flex flex-column">
+                    <p class="text-70 brand mb-24pt">
+                        <img class="brand-icon" src="../img/resources/logo-2.png" alt="Luma"> 
+                    </p>
+                    
+                    <p class="mb-8pt d-flex">
+                         <a href="../aboutus.php" class="text-70 text-underline mr-8pt small">About Us</a>
+                        <a href="../contactus.php" class="text-70 text-underline small">Contact Us</a>
+                    </p>
+                    <p class="text-50 small mt-n1 mb-0">Copyright © Spring of Life Outreach Ministry<?php echo date("Y"); ?> &copy; All rights reserved.</p>
+				</div>
+            </div>
+
+
+        </div>
+        <!-- // END drawer-layout__content -->
+
+
+
+
+        <!-- drawer -->
+        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+            <div class="mdk-drawer__content">
+                <div class="sidebar sidebar-light sidebar-light-dodger-blue sidebar-left" data-perfect-scrollbar>
+
+
+
+
+                    <a href="boxed-index.html" class="sidebar-brand sidebar-brand-dark bg-primary-pickled-bluewood">
+                        <!-- <img class="sidebar-brand-icon" src="assets/images/illustration/student/128/white.svg" alt="Luma"> -->
+
+                       
+
+                        <span><img src="../img/resources/logo-2.png" width="250px" height="40px" ></span>
+                    </a>
+
+
+                    <ul class="sidebar-menu">
+
+
+                        <li class="sidebar-menu-item ">
+                            <a class="sidebar-menu-button" href="index.php">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
+                                <span class="sidebar-menu-text">Back to Home Page</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button" href="bibleindex.php">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">local_library</span>
+                                <span class="sidebar-menu-text">Bible Studies</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="caqa.php">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">style</span>
+                                <span class="sidebar-menu-text">Commonly Ask Questions</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="question.php">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">account_box</span>
+                                <span class="sidebar-menu-text">Got a Question</span>
+                            </a>
+                        </li>
+                        
+
+                    </ul>
+
+
+
+
+                   
+
+                        
+                       
+
+
+                </div>
+            </div>
+        </div>
+        <!-- // END drawer -->
+
+
+    </div>
+    <!-- // END drawer-layout -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- Fix Footer -->
+    <script src="assets/vendor/fix-footer.js"></script>
+
+    <!-- App JS -->
+    <script src="assets/js/app.js"></script>
+
+
+
+
+</body>
+
+
+<!-- Mirrored from luma.humatheme.com/boxed-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Aug 2020 13:44:41 GMT -->
+</html>

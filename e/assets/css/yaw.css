@@ -1,0 +1,54 @@
+
+.kay{
+	font-family: Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+	font-size:1.1rem;
+	 color:#fff;
+	 font-weight:600;
+}
+.mensah {
+ display:inline-block;
+ font-family:Exo\ 2,Helvetica Neue,Arial,sans-serif;
+ font-weight:600;
+ color:#fff;
+ text-align:center;
+ vertical-align:middle;
+ -webkit-user-select:none;
+ -moz-user-select:none;
+ -ms-user-select:none;
+ user-select:none;
+ background-color:#530aa3;
+ border:1px solid transparent;
+ padding:.5rem 1rem;
+ font-size:1.5rem;
+ line-height:1.5;
+ border-radius:.25rem;
+ transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out float;
+ float: right;
+}
+.timi {
+ display:inline-block;
+ font-family:Exo\ 2,Helvetica Neue,Arial,sans-serif;
+ font-weight:600;
+ color:#fff;
+ text-align:center;
+ vertical-align:middle;
+ -webkit-user-select:none;
+ -moz-user-select:none;
+ -ms-user-select:none;
+ user-select:none;
+ padding:.5rem 1rem;
+ font-size:1.5rem;
+ line-height:1.5;
+ border-radius:.25rem;
+ transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out float;
+ float: left;
+}
+
+layout .container, [dir="ltr"] .mdk-drawer-layout .container-fluid, [dir="ltr"] .mdk-drawer-layout .container-lg, [dir="ltr"] .mdk-drawer-layout .container-md, [dir="ltr"] .mdk-drawer-layout .container-sm, [dir="ltr"] .mdk-drawer-layout .container-xl {
+    max-width: 960px;
+}
+.hmensah {
+    font-size: 4.5rem;
+	font-weight: bold;
+	color: #fff;
+}

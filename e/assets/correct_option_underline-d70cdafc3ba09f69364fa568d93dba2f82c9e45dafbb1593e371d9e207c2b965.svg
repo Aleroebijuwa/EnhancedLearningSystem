@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 50 7.8827936"
+   version="1.1"
+   id="svg10261"
+   preserveAspectRatio="none"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10258">
+    <linearGradient
+       id="linearGradient6000"
+       x1="0"
+       y1="0"
+       x2="49.99268"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.93538306,0,0,1.1157987,1.495166,1.5604576)">
+      <stop
+         style="stop-color:#e85b6b;stop-opacity:1;"
+         offset="0"
+         id="stop5994" />
+      <stop
+         style="stop-color:#e85b6b;stop-opacity:0.80000001"
+         offset="1"
+         id="stop5996" />
+    </linearGradient>
+  </defs>
+  <path
+     style="fill:none;fill-rule:nonzero;stroke:url(#linearGradient6000);stroke-width:4.999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 2.4997388,5.3830556 C 23.67353,2.8806111 23.750922,2.6238225 47.500262,2.4641362"
+     vector-effect="non-scaling-stroke"
+     id="path523" />
+</svg>
